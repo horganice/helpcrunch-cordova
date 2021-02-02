@@ -43,10 +43,26 @@ public class HelpcrunchPlugin extends CordovaPlugin {
         callbackContext.success();
       }
     },
+    getUnreadChatsCount {
+      @Override 
+      void performAction(JSONArray args, CallbackContext callbackContext, CordovaInterface cordova) {
+        HelpCrunch.getUnreadChatsCount(new Callback<Integer>() {
+            @Override
+            public void onSuccess(Integer result) {
+               callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, result));
+            }
+
+            @Override
+            public void onError(@NotNull String message) {
+               callbackContext.error(message);
+            }
+        });
+      }
+    },
     unknown {
       @Override
       void performAction(JSONArray args, CallbackContext callbackContext, CordovaInterface cordova) {
-        callbackContext.error("[Intercom-Cordova] ERROR: Undefined function");
+        callbackContext.error("[Helpcrunch-Cordova] ERROR: Undefined function");
       }
     };
 

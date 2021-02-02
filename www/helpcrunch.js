@@ -4,6 +4,9 @@ var helpcrunch = {
     },
     showChatScreen: function (success, error) {
         cordova.exec(success, error, 'HelpcrunchPlugin', 'showChatScreen', []);
+    },
+    getUnreadChatsCount: function (success, error) {
+        cordova.exec(success, error, 'HelpcrunchPlugin', 'getUnreadChatsCount', []);
     }
 }
 
