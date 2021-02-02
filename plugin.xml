@@ -11,8 +11,8 @@
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
 
-    <js-module name="Helpcrunch" src="www/helpcrunch.js">
-        <clobbers target="helpcrunch" />
+    <js-module name="HelpcrunchPlugin" src="www/helpcrunch.js">
+        <clobbers target="HelpcrunchPlugin" />
     </js-module>
 
     <platform name="android">
