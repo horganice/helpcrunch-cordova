@@ -12,7 +12,7 @@
     </engines>
 
     <js-module name="Helpcrunch" src="www/helpcrunch.js">
-        <clobbers target="cordova.plugins.helpcrunch" />
+        <clobbers target="helpcrunch" />
     </js-module>
 
     <platform name="android">
