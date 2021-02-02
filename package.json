@@ -1,0 +1,25 @@
+{
+    "name": "cordova-plugin-helpcrunch",
+    "version": "1.0.0",
+    "description": "Official Cordova/PhoneGap plugin for Helpcrunch",
+    "cordova": {
+        "id": "cordova-plugin-helpcrunch",
+        "platforms": [
+            "android"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/horganice/helpcrunch-cordova.git"
+    },
+    "keywords": [
+        "cordova-ios",
+        "cordova-android"
+    ],
+    "author": "Phawit",
+    "license": "MIT License",
+    "bugs": {
+        "url": "https://github.com/horganice/helpcrunch-cordova/issues"
+    },
+    "homepage": "https://github.com/horganice/helpcrunch-cordova#readme"
+}
