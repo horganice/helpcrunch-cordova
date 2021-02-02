@@ -1,4 +1,4 @@
-package com.horganice.cordova.plugin;
+package com.horganice.helpcrunch;
 // Cordova-required packages
 
 import android.content.Context;

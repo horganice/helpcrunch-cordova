@@ -18,7 +18,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="HelpcrunchPlugin">
-                <param name="android-package" value="com.horganice.HelpcrunchPlugin"/>
+                <param name="android-package" value="com.horganice.helpcrunch.HelpcrunchPlugin"/>
             </feature>
         </config-file>
         <framework src="src/android/helpcrunch.gradle" custom="true" type="gradleReference" />
