@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-intercom" version="9.4.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Helpcrunch</name>
+    <author>Horganice</author>
+    <license>MIT License</license>
+    <description>Cordova plugin for Helpcrunch for mobile</description>
+    <repo>https://github.com/horganice/helpcrunch-cordova.git</repo>
+    <keywords>helpcrunch-cordova</keywords>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+    <js-module name="Intercom" src="www/helpcrunch.js">
+        <clobbers target="cordova.plugins.helpcrunch" />
+    </js-module>
+    
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="HelpcrunchPlugin">
+                <param name="android-package" value="com.horganice.cordova.plugin.HelpcrunchPlugin"/>
+            </feature>
+        </config-file>
+        <framework src="com.helpcrunch:chat-sdk:3.0.7" />
+        <source-file src="src/android/HelpcrunchPlugin.java" target-dir="src/com/horganice/helpcrunch" />
+    </platform>
+</plugin>
