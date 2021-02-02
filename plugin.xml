@@ -11,7 +11,7 @@
         <engine name="cordova" version=">=3.0.0"/>
     </engines>
 
-    <js-module name="Intercom" src="www/helpcrunch.js">
+    <js-module name="Helpcrunch" src="www/helpcrunch.js">
         <clobbers target="cordova.plugins.helpcrunch" />
     </js-module>
 
@@ -21,7 +21,7 @@
                 <param name="android-package" value="com.horganice.cordova.plugin.HelpcrunchPlugin"/>
             </feature>
         </config-file>
-        <framework src="com.helpcrunch:chat-sdk:3.0.7" />
+        <framework src="src/android/helpcrunch.gradle" custom="true" type="gradleReference" />
         <source-file src="src/android/HelpcrunchPlugin.java" target-dir="src/com/horganice/helpcrunch" />
     </platform>
 </plugin>
